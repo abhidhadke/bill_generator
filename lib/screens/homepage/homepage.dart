@@ -1,5 +1,6 @@
 import 'package:bill_generator/screens/Quotation/quotation.dart';
 import 'package:bill_generator/screens/admin_expense/admin_expense.dart';
+import 'package:bill_generator/screens/homepage/components/app_bar.dart';
 import 'package:bill_generator/screens/invoice/invoice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
@@ -18,6 +19,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appBar(),
       floatingActionButton: SpeedDial(
         children: [
           SpeedDialChild(
